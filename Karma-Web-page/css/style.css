@@ -15,134 +15,158 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
- /* Nav */
+body{
+    line-height: 1;
+}
+  /* Nav */
  .navbar{
-     background-color: white;
-     position:fixed;
-     width:100%;
- }
- #logopic{ 
-    margin-left:247px;
-    margin-top: 6px;
-    width: 25px;
-    height:50px;
+    background-color: white;
+    width:100%; height:4.3rem;
+    display:flex;
+    justify-content: space-around;
+    position: fixed;
+    min-width: 37.5rem;
+    font-size:2.4vh;
+}    
+#logopic{ 
+   width: 25px;
+   height:4,4rem;
 }
 .linkcontainer{
-    display:flex;
-    flex-direction: row;
-    float:right;
-    margin:20px;
-    margin-right:220px;
-    font-size:1rem;
-   
+   display:flex;
+   flex-direction: row;
+   float:right;
+   justify-content: space-around;
+   align-content: center;
+   height: 4,3rem;
+   margin-top:1,3rem;
 }
- .link{
-     color: grey;
-     text-decoration: none;
-     padding:10px;
- }
- .open{
-     color:rgb(68, 67, 67);
- }
- .link:hover{
-    color:black;
- }
- 
-/* Header */
-.header{
+.link{
+    color: grey;
+    text-decoration: none;
+    padding:8px;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    color:white;
-    background-image: url(/img/first-background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width:100%; height:700px;;
     justify-content: center;
-    font-size: 25px;
-    margin:0;
-    
+    margin: 10px;
+    margin-top:17px;
 }
-.headername p:first-of-type{
-    line-height: 2px;
-    font-size:2em;
+.open{
+    color:rgb(68, 67, 67);
+    font-weight: 500;
 }
+.link:hover{
+   color:black;
+}
+
+/* Header */
+.headercontainer{
+   background-image: url(/img/first-background.jpg);
+   background-repeat: no-repeat;
+   background-position:center;
+   background-size: cover ;
+   height:46rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   min-width: 400px;
+   color:white;
+}
+.header{
+   display: flex;
+   flex-direction: column;
+   margin:0;
+   overflow:auto;  
+}
+.headername{
+  font-size: 24px;
+  font-weight: 300;
+
+}
+h1{ font-weight: 300;
+   margin:0;
+}
+
 button{
-    border-radius: 5px;
-    border-style: none;
-    background-color: #f15a29;
-    color:white;
-    padding:15px;
-    width:160px;
-    font-size: 18px;
+   border-radius: 5px;
+   border-style: none;
+   background-color: #f15a29;
+   color:white;
+   padding:17px;
+   width:9rem;
+   font-size:18px;
+   
 }
 /* Main */
 
 .maininfo{
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    margin: 90px;
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   margin: 90px;
+   
 }
 .maintext{
-    margin-top: 25px;
-    margin-bottom:15px ;
-    font-size:44px;
-    text-align: center;
+   margin-top: 25px;
+   margin-bottom:15px ;
+   font-size:44px;
+   text-align: center;
+   font-weight: 300;
 }
 .tripic{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   vertical-align: baseline;
 }
 
 .sectionicon{
-    font-size: 25px;
-    padding:15px;
-    text-align: center;
+   font-size: 25px;
+   padding:15px;
+   text-align: center;
 } 
-    
+   
 .icon{
-    width:150px;
+  width:127px;
+  height:127px;
 }
 /*Footer*/
 .footercontainer{
-    display:flex;
-    flex-direction:column ;
-    justify-content:center;
+   display:flex;
+   flex-direction:column ;
+   justify-content:center;
 }
 .socialmedia{
-    display:flex;
-    flex-direction:row;
-    justify-content: center;
+   display:flex;
+   flex-direction:row;
+   justify-content: center;
 }
 .medialink{
-    border:1px solid lightgray;
-    display:flex;
-    justify-content: center;
-    width:35px;
-    height:35px ;
-    margin:10px;
-    padding:12px;
-    border-radius: 50px;
+   border:1px solid lightgray;
+   display:flex;
+   justify-content: center;
+   width:35px;
+   height:35px ;
+   margin:10px;
+   padding:12px;
+   border-radius: 50px;
 }
 .iconsocial{
-    margin:5px;
-    width:22px;
-    height:20px ;
+   margin:5px;
+   width:22px;
+   height:20px ;
 }
 .footercontainer > p{
-    font-size: 16px;
-    text-align: center;
+   font-size: 16px;
+   text-align: center;
 }
 hr{
-    opacity:20%;
+   opacity:20%;
 }
 .corporationtext{
-    text-align: center;
-    color:rgb(165, 163, 163);
-    margin-bottom: 50px;
+   text-align: center;
+   color:rgb(165, 163, 163);
+   margin-bottom: 50px;
 }
 /* Media */
+
